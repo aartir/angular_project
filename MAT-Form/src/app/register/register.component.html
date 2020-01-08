@@ -6,27 +6,27 @@
         <form [formGroup]="form">
             <mat-form-field class="full-width">
                 <mat-label>First Name</mat-label>
-                <input matInput placeholder="First name" name="fname" formControlName="fname">
+                <input matInput placeholder="First name" name="fname" formControlName="fname" required>
             </mat-form-field>
             <mat-form-field class="full-width">
                 <mat-label>Last Name</mat-label>
-                <input matInput placeholder="Last name" name="lname" formControlName="lname">
+                <input matInput placeholder="Last name" name="lname" formControlName="lname" required>
             </mat-form-field>
             <mat-form-field class="full-width">
                 <mat-label>Address</mat-label>
-                <input matInput placeholder="Address" name="address" formControlName="address">
+                <input matInput placeholder="Address" name="address" formControlName="address" required>
             </mat-form-field>
             <mat-form-field class="full-width">
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="Email" name="email" formControlName="email">
+                <input matInput placeholder="Email" name="email" formControlName="email" required>
             </mat-form-field>
             <mat-form-field class="full-width">
                 <mat-label>Password</mat-label>
-                <input matInput placeholder="Password" name="password" type='password' formControlName="password">
+                <input matInput placeholder="Password" name="password" type='password' formControlName="password" required>
             </mat-form-field>
             <section class="example-section">
                 <label class="example-margin">Gender:  </label>
-                <mat-radio-group formControlName="gender">
+                <mat-radio-group formControlName="gender" required>
                     <mat-radio-button class="example-margin" value="Male">Male</mat-radio-button>
                     <mat-radio-button class="example-margin" value="Female">Female</mat-radio-button>
                     <mat-radio-button class="example-margin" value="Other">Other</mat-radio-button>
@@ -34,7 +34,7 @@
             </section>
             <mat-form-field>
                 <mat-label>Date Of Birth</mat-label>
-                <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dob">
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dob" required>
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
